@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Wishlist</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .wishlist-item {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+      height: 400px;
+      margin: auto;
+    }
+
+
+    img {
+
+      width: 300px;
+      height: 250px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    p {
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="wishlist-item"><h2>OWO Skin</h2>
+    <img src="frontal-owo-1-1.png" alt="Item 1">
+    <button onclick="redirectToBuy('https://owogame.com')">Buy Now</button>
+    <button onclick="showDescription('item1-description')">Reason</button>
+    <p id="item1-description">Description for Item 1...</p></div>
+
+
+    <div class="wishlist-item"><h2>Quest 3</h2><img src="Headset_3-meta-gear.webp" alt="Item 2">
+    <button onclick="redirectToBuy('https://www.meta.com/au/quest/quest-3/-link')">Buy Now</button>
+    <button onclick="showDescription('item2-description')">Reason</button>
+    <p id="item2-description">Description for Item 2...</p></div>
+    
+    <div class="wishlist-item">    
+    <h2>Keyboard</h2>
+    <img src="k10_hero.webp" alt="Item 3">
+    <button onclick="redirectToBuy('https://www.switchkeys.com.au/collections/keyboards')">Buy Now</button>
+    <button onclick="showDescription('item3-description')">Reason</button><p id="item3-description">Description for Item 3...</p></div>
+  <!-- Add more items as needed -->
+ 
+  <div class="wishlist-item">    
+    <h2>LED Lights</h2>
+    <img src="81Sq0Rww7XL._AC_UY436_FMwebp_QL65_.webp" alt="Item 2">
+    <button onclick="redirectToBuy('https://www.amazon.com.au/LED-Strips/b?ie=UTF8&node=4989995051')">Buy Now</button>
+    <button onclick="showDescription('item4-description')">Reason</button><p id="item4-description">Description for Item 2...</p></div>
+  <!-- Add more items as needed -->
+  <div class="wishlist-item">    
+    <h2>Gaming Chair</h2>
+    <img src="634653-Product-0-I_26a9889e-5e81-4df4-a0e5-8006758a9715_600x600.webp" alt="Item 3">
+    <button onclick="redirectToBuy('https://www.jbhifi.com.au/collections/games-consoles/gaming-chairs')">Buy Now</button>
+    <button onclick="showDescription('item5-description')">Reason</button><p id="item5-description">Description for Item 2...</p></div>
+  <!-- Add more items as needed -->
+  <div class="wishlist-item">    
+    <h2>PS5</h2>
+    <img src="17317862834206.jpg" alt="Item 4">
+    <button onclick="redirectToBuy('https://www.playstation.com/en-au/ps5/')">Buy Now</button>
+    <button onclick="showDescription('item6-description')">Reason</button><p id="item6-description">Description for Item 2...</p></div>
+    <div class="wishlist-item">    
+      <h2>Reamarkable</h2>
+      <img src="7c14535ce4cbfa710eb87998d5089abc6847cd4a-2880x1227.webp" alt="Item 5">
+      <button onclick="redirectToBuy('https://remarkable.com')">Buy Now</button>
+      <button onclick="showDescription('item7-description')">Reason</button><p id="item7-description">Description for Item 2...</p></div>
+      <div class="wishlist-item">    
+        <h2>Kindle</h2>
+        <img src="51QCk82iGcL._AC_UL640_QL65_.jpg" alt="Item 6">
+        <button onclick="redirectToBuy('https://www.amazon.com.au/Kindle-E-readers/b?ie=UTF8&node=5364186051')">Buy Now</button>
+        <button onclick="showDescription('item8-description')">Reason</button><p id="item8-description">Description for Item 2...</p></div>
+        <div class="wishlist-item">    
+        <h2>Fan</h2>
+        <img src="0027423_0.jpeg" alt="Item 7">
+        <button onclick="redirectToBuy('https://www.umart.com.au/product/noctua-nh-u9s-multi-socket-cpu-cooler-30165')">Buy Now</button>
+        <button onclick="showDescription('item9-description')">Reason</button><p id="item9-description">Description for Item 2...</p></div>
+     
+  <script>
+    
+    function redirectToBuy(link) {
+      window.location.href = link;
+    }
+
+    function showDescription(descriptionId) {
+      const description = document.getElementById(descriptionId);
+      description.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
